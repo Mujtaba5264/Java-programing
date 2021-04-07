@@ -3,10 +3,11 @@ package IncomeTaxAssignment;
 import java.util.Scanner;
 
 public class IncomeTaxRate {
+    // two static variables  Taxfree and tax amount.  Taxfree is the least amount from which tax start. tax_amount is 0 for the first time.
     public static final double Taxfree = 600000;
     public static double taxAmount=0;
 
-    // findTax is a static function which has double return type . It takes perameter as salary and find the tax
+    // findTax is a static method which has double return type . It takes perameter as salary and find the tax amount
     // based on the salary
     public static double findtax(double salary) {
 
@@ -50,7 +51,7 @@ public class IncomeTaxRate {
         return taxAmount;
     }
 
-// this is the main function here i have called the findtax method after getting salary as input from the user.
+// this is the main method. here i have called the findtax method after getting salary as input from the user.
     public static void main(String[] args){
         System.out.print("Enter your salary : ");
         Scanner sc = new Scanner(System.in);
